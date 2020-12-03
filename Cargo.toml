@@ -3,6 +3,7 @@ name = "piface"
 version = "0.1.0"
 authors = ["Christian Haynes <06chaynes@gmail.com>"]
 description = "Attempts to determine the default route and gets related interface information"
+repository = "https://github.com/06chaynes/piface"
 readme = "README.md"
 edition = "2018"
 
