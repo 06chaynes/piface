@@ -33,3 +33,7 @@ PrimaryInterface {
     },
 }
 ```
+
+## License
+
+`piface` is licensed under both MIT and Apache 2.0
