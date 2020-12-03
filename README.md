@@ -1,4 +1,7 @@
-# piface
+# `piface`
+
+[![crates.io](https://img.shields.io/crates/v/piface.svg)](https://crates.io/crates/piface)
+[![Released API docs](https://docs.rs/piface/badge.svg)](https://docs.rs/piface)
 
 This library will attempt to determine the local machine's default route to the internet and pull related info
 
