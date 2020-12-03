@@ -34,6 +34,7 @@ fn mac_cmd(index: &str) -> Result<Output> {
     Ok(output)
 }
 
+/// Uses wmic commands to get interface information
 pub fn get_mac() -> Result<Option<MacAddress>> {
     let index_cmd_output = index_cmd()?;
     let s = String::from_utf8(index_cmd_output.stdout)?;

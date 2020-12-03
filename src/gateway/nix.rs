@@ -9,6 +9,7 @@ fn route_cmd() -> Result<Output> {
     Ok(output)
 }
 
+/// This attempts to call and parse the output of the route command
 pub fn get_default_route() -> Result<DefaultRoute> {
     let mut default_route = DefaultRoute::default();
     let route_cmd_output = route_cmd()?;

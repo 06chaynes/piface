@@ -1,9 +1,7 @@
-use piface::PrimaryInterface;
+use piface::{PrimaryInterface, Result};
 
-fn main() {
-    std::env::set_var("RUST_LOG", "trace");
-    env_logger::init();
-
-    let piface = PrimaryInterface::load().unwrap();
-    println!("{:#?}", piface);
+fn main() -> Result<()> {
+    let iface = PrimaryInterface::load()?;
+    println!("{:#?}", iface);
+    Ok(())
 }

@@ -2,6 +2,8 @@
 name = "piface"
 version = "0.1.0"
 authors = ["Christian Haynes <06chaynes@gmail.com>"]
+description = "Attempts to determine the default route and gets related interface information"
+readme = "README.md"
 edition = "2018"
 
 [dependencies]

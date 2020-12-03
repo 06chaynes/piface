@@ -31,6 +31,7 @@ fn adapter_cmd(index: &str) -> Result<Output> {
     Ok(output)
 }
 
+/// This attempts to call and parse the wmic commands
 pub fn get_default_route() -> Result<DefaultRoute> {
     let mut default_route = DefaultRoute::default();
     let route_cmd_output = route_cmd()?;

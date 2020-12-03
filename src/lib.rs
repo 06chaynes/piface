@@ -1,3 +1,4 @@
+//! This library will attempt to determine the local machine's default route to the internet and pull related info
 mod error;
 pub mod gateway;
 pub mod interface;

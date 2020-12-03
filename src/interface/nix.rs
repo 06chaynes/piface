@@ -2,6 +2,9 @@ use crate::Result;
 use eui48::MacAddress;
 use nix::{ifaddrs::*, sys::socket::SockAddr};
 
+/// Uses the nix crate to pull interface information
+/// 
+/// This was largely taken from https://github.com/repnop/mac_address/blob/master/src/linux.rs
 pub fn get_mac(name: &str) -> Result<Option<MacAddress>> {
     let ifiter = getifaddrs()?;
     for interface in ifiter {
