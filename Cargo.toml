@@ -1,0 +1,16 @@
+[package]
+name = "piface"
+version = "0.1.0"
+authors = ["Christian Haynes <06chaynes@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "^0.4"
+eui48 = "^1.1"
+thiserror = "^1.0"
+
+[target.'cfg(any(target_os = "linux", target_os = "macos", target_os = "freebsd"))'.dependencies]
+nix = "^0.19"
+
+[dev-dependencies]
+env_logger = "^0.8"
