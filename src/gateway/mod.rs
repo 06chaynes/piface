@@ -10,19 +10,19 @@ mod os;
 mod os;
 
 /// Underlying function call specific to the operating system to determine the default route
-/// 
+///
 /// On *nix based machines the route command will be used
 /// On windows machines wmic commands will be used
 pub use self::os::get_default_route;
 
 /// This contains the gateway IP and interface name associated with the default route
-/// 
+///
 /// # Examples
-/// 
+///
 /// ```
 /// # use piface::Result;
 /// use piface::DefaultRoute;
-/// 
+///
 /// # fn try_main() -> Result<()> {
 /// let default_route = DefaultRoute::load()?;
 /// println!("{:#?}", default_route);
@@ -51,4 +51,3 @@ impl DefaultRoute {
         Ok(())
     }
 }
-

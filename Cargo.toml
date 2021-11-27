@@ -1,6 +1,6 @@
 [package]
 name = "piface"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Christian Haynes <06chaynes@gmail.com>"]
 description = "Attempts to determine the default route and gets related interface information"
 repository = "https://github.com/06chaynes/piface"

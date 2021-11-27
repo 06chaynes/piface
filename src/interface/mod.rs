@@ -10,22 +10,22 @@ mod os;
 mod os;
 
 /// Underlying function call specific to the operating system to pull a mac address for a passed interface
-/// 
+///
 /// On *nix based machines the nix crate will be used
 /// On windows machines wmic commands will be used
 pub use self::os::get_mac;
 
 /// This contains the interface name, mac address, and the related default route
-/// 
+///
 /// The interface name will use the friendly name on windows machines
 /// The mac address will be parsed for standardization
-/// 
+///
 /// # Examples
-/// 
+///
 /// ```
 /// # use piface::Result;
 /// use piface::PrimaryInterface;
-/// 
+///
 /// # fn try_main() -> Result<()> {
 /// let iface = PrimaryInterface::load()?;
 /// println!("{:#?}", iface);
