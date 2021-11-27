@@ -10,12 +10,12 @@ edition = "2018"
 keywords = ["primary", "network", "interface"]
 
 [dependencies]
-log = "^0.4"
-eui48 = "^1.1"
-thiserror = "^1.0"
+log = "0.4"
+eui48 = "1.1"
+thiserror = "1.0"
 
 [target.'cfg(any(target_os = "linux", target_os = "macos", target_os = "freebsd"))'.dependencies]
-nix = "^0.19"
+nix = "0.23"
 
 [dev-dependencies]
-env_logger = "^0.8"
+env_logger = "0.9"
